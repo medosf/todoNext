@@ -30,7 +30,7 @@ export default function Home() {
     method: 'DELETE',
     })
 
-  if (res.status === 200) {
+  if (res.status === 204) {
     fetchTodos();
   }
 
@@ -60,7 +60,7 @@ export default function Home() {
 
           {isLoading && <p>Loading...</p>}
           {error && <p>Error fetching todos, please try again later</p>}
-          <ul>
+          <ul className="min-w-[280px]">
             {todos.map((todo:any) => (
               
               <li key={todo.id} className="text-black">

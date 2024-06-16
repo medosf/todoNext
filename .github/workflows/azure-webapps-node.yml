@@ -1,6 +1,7 @@
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "none" ]
+    # disbale this workflow for now
   workflow_dispatch:
 
 env:
